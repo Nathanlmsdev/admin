@@ -1,0 +1,202 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row align-items-center">
+      <div class="col">
+        <h3 class="page-title">Certificate List</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">Certificate List</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card card-table">
+        <div class="card-body">
+          <div class="card mb-0">
+            <div class="card-body">
+              <form class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Agency </label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option value="1">12312</option>
+                      <option value="2">22123</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Language </label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label> Course Code </label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option value="1">1</option>
+                      <option value="2">1</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Course Name </label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Batch ID </label>
+                    <select class="select2 form-control" required>
+                      <option disabled>-- Select --</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="2">3</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Course Date </label>
+                    <input class="form-control" type="date" />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group mt-4">
+                    <a routerLink="/" class="btn btn-primary"> Submit </a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- table -->
+          <div class="table-responsive smallinput mt-5">
+            <table
+              datatable
+              [dtOptions]="dtOptions"
+              class="datatable table table-stripped"
+            >
+              <thead class="bg bg-secondary">
+                <tr class="text-white">
+                  <th>SN</th>
+                  <th>Student Name</th>
+                  <th>National ID</th>
+                  <th>Course Date</th>
+                  <th>Certificate Approval date</th>
+                  <th>Certificate Issue date</th>
+                  <th>Certificate Number</th>
+                  <th>Certificate Delivery Status</th>
+                  <th>Remarks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="ICFC N1"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="12-Dec-2022"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="16-12-2022"
+                        disabled
+                      />
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="form-group">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

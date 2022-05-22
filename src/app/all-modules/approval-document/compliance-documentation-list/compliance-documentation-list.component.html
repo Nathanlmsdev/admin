@@ -1,0 +1,150 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row align-items-center">
+      <div class="col">
+        <h3 class="page-title">Compliance Documentation List</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">Compliance Documentation List</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card card-table">
+        <div class="card-body">
+          <!-- table -->
+          <div class="table-responsive smallinput">
+            <table
+              datatable
+              [dtOptions]="dtOptions"
+              class="datatable table table-stripped"
+            >
+              <thead class="bg bg-secondary">
+                <tr class="text-white">
+                  <th>
+                    <div class="form-group form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                    </div>
+                  </th>
+                  <th>SN</th>
+
+                  <th>Agency Name</th>
+                  <th>Document Name</th>
+                  <th>Document ID</th>
+                  <th>Retention Till</th>
+                  <th>Actions</th>
+                  <th>Share</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="form-group form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="exampleCheck1"
+                      />
+                    </div>
+                  </td>
+                  <td>1</td>
+
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="ICFC N1 Agency"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Property View"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="D12R2"
+                        disabled
+                      />
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="12-12-2023"
+                        disabled
+                      />
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="actions">
+                      <a
+                        routerLink="/"
+                        class="btn btn-sm bg-success-light mr-1"
+                      >
+                        <i class="fas fa-pen"></i>
+                      </a>
+
+                      <a href="#" class="btn btn-sm bg-success-light mr-1">
+                        <i class="fas fa-plus"></i>
+                      </a>
+
+                      <a href="#" class="btn btn-sm bg-danger-light mr-1">
+                        <i class="fas fa-trash"></i>
+                      </a>
+
+                      <a href="#" class="btn btn-sm bg-warning mr-1">
+                        <i class="fas fa-download"></i>
+                      </a>
+                      <a href="#" class="btn btn-sm bg-secondary">
+                        <i class="fas fa-eye"></i>
+                      </a>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="form-group">
+                      <select class="form-control mb-2" required>
+                        <option disabled selected>-- Select --</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="2">3</option>
+                      </select>
+                      <input type="text" class="form-control mb-2" />
+                      <a href="#" class="btn btn-sm btn-secondary">Send</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

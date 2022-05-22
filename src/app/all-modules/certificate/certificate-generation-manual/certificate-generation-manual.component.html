@@ -1,0 +1,233 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row align-items-center">
+      <div class="col">
+        <h3 class="page-title">Certificate Generation (Manual)</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">
+            Certificate Generation (Manual)
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card card-table">
+        <div class="card-body">
+          <div class="card mb-0">
+            <div class="card-body">
+              <form class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Agency </label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option value="1">12312</option>
+                      <option value="2">22123</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label> Course Code </label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option value="1">1</option>
+                      <option value="2">1</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Course Name </label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Batch ID </label>
+                    <select class="select2 form-control" required>
+                      <option disabled>-- Select --</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="2">3</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Course Date </label>
+                    <input class="form-control" type="date" />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group mt-4">
+                    <a routerLink="/" class="btn btn-primary"> Submit </a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- table -->
+          <div class="table-responsive smallinput mt-5">
+            <table
+              datatable
+              [dtOptions]="dtOptions"
+              class="datatable table table-stripped"
+            >
+              <thead class="bg bg-secondary">
+                <tr class="text-white">
+                  <th>SN</th>
+                  <th>Student ID</th>
+                  <th>Student Name</th>
+                  <th>Student National ID</th>
+                  <th>Certificate Template ID</th>
+                  <th>Language</th>
+                  <th>Attendance Status</th>
+                  <th>Assessment Status</th>
+                  <th>Certificate Approval Status</th>
+                  <th>Certificate Issuance</th>
+                  <th>Selection</th>
+                  <th>Certificate Check</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <span class="badge badge-success">Ok</span>
+                    <span class="badge badge-danger">Not</span>
+                    <span class="badge badge-warning">Query</span>
+                  </td>
+
+                  <td>
+                    <span class="badge badge-success">Ok</span>
+                    <span class="badge badge-danger">Not</span>
+                    <span class="badge badge-warning">Query</span>
+                  </td>
+                  <td>
+                    <span class="badge badge-success">Ok</span>
+                    <span class="badge badge-danger">Not</span>
+                    <span class="badge badge-warning">Query</span>
+                  </td>
+
+                  <td>
+                    <div class="form-group">
+                      <select class="form-control" required>
+                        <option disabled selected>-- Select --</option>
+                        <option value="1">Yes</option>
+                        <option value="2">No</option>
+                      </select>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="form-group">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <a href="#" class="btn btn-sm btn-secondary">Generate</a>
+                    </div>
+                  </td>
+                  <td>
+                    <a href="#">View Link</a>
+                  </td>
+                  <td>
+                    <div class="actions">
+                      <a
+                        routerLink="/"
+                        class="btn btn-sm bg-success-light mr-1"
+                      >
+                        <i class="fas fa-pen"></i>
+                      </a>
+                      <a href="#" class="btn btn-sm bg-secondary">
+                        <i class="fas fa-eye"></i>
+                      </a>
+                      <a href="#" class="btn btn-sm bg-danger-light mr-1">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="mt-3">
+            <div class="form-group">
+              <a routerLink="/" class="btn btn-primary"> Submit </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

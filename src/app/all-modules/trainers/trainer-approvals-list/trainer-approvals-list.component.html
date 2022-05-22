@@ -1,0 +1,128 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row align-items-center">
+      <div class="col">
+        <h3 class="page-title">Trainer Approval List</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">Trainer Approval List</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card card-table">
+        <div class="card-body">
+          <div class="accordion" id="accordionExample">
+            <div class="card mb-0">
+              <div
+                class="card-header p-2"
+                id="headingOne"
+                style="background-color: #f5f5f5"
+              >
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link btn-block text-left"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  ></button>
+                </h2>
+              </div>
+
+              <div
+                id="collapseOne"
+                class="collapse show"
+                aria-labelledby="headingOne"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <form class="row">
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Course Category </label>
+                        <select class="select2 form-control" required>
+                          <option disabled selected>-- Select --</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="2">3</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Course Name </label>
+                        <select class="select2 form-control" required>
+                          <option disabled selected>-- Select --</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="2">3</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group mt-4">
+                        <a routerLink="/" class="btn btn-primary"> Update </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12">
+      <div class="card card-table">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table
+              datatable
+              [dtOptions]="dtOptions"
+              class="datatable table table-stripped"
+            >
+              <thead class="bg bg-secondary">
+                <tr class="text-white">
+                  <th>SN</th>
+                  <th>Trainer ID</th>
+                  <th>Trainer Name</th>
+                  <th>Training Organization</th>
+                  <th>Course approved</th>
+                  <th>Approved Role</th>
+                  <th>Languages approved</th>
+                  <th>Approved on</th>
+                  <th>Approved by</th>
+                  <th>Reapproval due</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>DF234</td>
+                  <td><a href="#">ICFC N1</a></td>
+                  <td>ABS Systemes</td>
+                  <td>ICFC N1</td>
+                  <td>Manager</td>
+                  <td>Tamil</td>
+                  <td>15-Feb-2022</td>
+                  <td>John</td>
+                  <td>22-Feb-2022</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,142 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row align-items-center">
+      <div class="col">
+        <h3 class="page-title">Trainer List</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">Trainer List</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <!-- input -->
+    <div class="col-sm-12">
+      <div class="card card-table">
+        <div class="card-body">
+          <form class="row">
+            <div class="col-md-6">
+              <label class="">&nbsp;</label>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Text input with dropdown button"
+                />
+                <div class="input-group-append">
+                  <button
+                    class="btn btn-outline-secondary dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Select
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Trainer Name</a>
+                    <a class="dropdown-item" href="#">Email </a>
+                    <a class="dropdown-item" href="#">NRIC/FIN </a>
+                    <a class="dropdown-item" href="#">Course Name </a>
+                    <a class="dropdown-item" href="#">Mobile Number </a>
+                    <a class="dropdown-item" href="#">Corporate Name</a>
+                    <a class="dropdown-item" href="#">Batch No </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="">Start Date</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="">End Date</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group mt-4">
+                    <a
+                      routerLink="/course/course-requirement-add"
+                      class="btn btn-primary"
+                      ><i class="fas fa-search"></i> Search
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- end search -->
+    <div class="col-sm-12">
+      <div class="card card-table">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table
+              datatable
+              [dtOptions]="dtOptions"
+              class="datatable table table-stripped"
+            >
+              <thead class="bg bg-secondary">
+                <tr class="text-white">
+                  <th>SN</th>
+                  <th>Trainer ID</th>
+                  <th>Trainer Name</th>
+                  <th>Contact No</th>
+                  <th>Trainer Profile</th>
+                  <th>ICFC Email</th>
+                  <th>Course approved</th>
+                  <th>Overall Trainer feedback</th>
+                  <th>Trainer Availability Date</th>
+                  <th>Trainer Availability Status</th>
+                  <th>created by</th>
+                  <th>created date</th>
+                  <th>updated by</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>DF234</td>
+                  <td><a href="#">ICFC N1</a></td>
+                  <td>959795565</td>
+                  <td><a href="#">Profile</a></td>
+                  <td>lakvas@gmail.com</td>
+                  <td>Auto</td>
+                  <td>Auto</td>
+                  <td>
+                    <input type="date" class="form-control form-control-sm" />
+                  </td>
+                  <td>23, 26</td>
+                  <td>Auto</td>
+                  <td>Auto</td>
+                  <td>Auto</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

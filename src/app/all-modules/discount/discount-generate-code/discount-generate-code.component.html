@@ -1,0 +1,204 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row align-items-center">
+      <div class="col">
+        <h3 class="page-title">Discount - Generate Code</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">Discount - Generate Code</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card card-table">
+        <div class="card-body">
+          <div class="card mb-0">
+            <div class="card-body">
+              <form class="row">
+                <!-- row -->
+                <div class="col-md-9">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Generate Discount Code </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="D1232"
+                          disabled
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label> Apply Discount </label>
+                        <select class="select2 form-control" required>
+                          <option disabled selected>-- Select --</option>
+                          <option value="1">Course Category</option>
+                          <option value="2">Course Name</option>
+                          <option value="2">Course Code</option>
+                          <option value="2">Batch Id</option>
+                          <option value="2">Corporate ID</option>
+                          <option value="2">Student ID</option>
+                          <option value="2">Table-based emails</option>
+                          <option value="2">Subscription emails</option>
+                          <option value="2">grant status</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label> Discount Percentage </label>
+
+                        <div class="form-row">
+                          <div class="col-md-7">
+                            <input type="text" class="form-control" />
+                          </div>
+                          <div class="col-md-5">
+                            <a
+                              routerLink="/"
+                              class="btn btn-primary btn-sm mr-1"
+                            >
+                              Apply
+                            </a>
+
+                            <a routerLink="/" class="btn btn-secondary btn-sm">
+                              Check
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Promotion Content </label>
+                        <input type="text" class="form-control mb-2" />
+                        <input type="file" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Import Emails </label>
+                        <input type="text" class="form-control mb-2" />
+                        <input type="file" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Valid till </label>
+                        <input type="date" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label>Actual Amount </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Auto"
+                          disabled
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label>Discounted Amount </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Auto"
+                          disabled
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label>Billable Amount </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Auto"
+                          disabled
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group mt-3">
+                    <a routerLink="/" class="btn btn-primary"> Submit </a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- table -->
+          <div class="table-responsive smallinput mt-5">
+            <table
+              datatable
+              [dtOptions]="dtOptions"
+              class="datatable table table-stripped"
+            >
+              <thead class="bg bg-secondary">
+                <tr class="text-white">
+                  <th>SN</th>
+
+                  <th>Discount Code</th>
+                  <th>Apply Discount</th>
+                  <th>Discounted Amount</th>
+                  <th>Billable Amount</th>
+                  <th>Valid till</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+
+                  <td>DSD#$234</td>
+
+                  <td>20</td>
+                  <td>10 %</td>
+                  <td>SG45</td>
+                  <td>07-Feb-2023</td>
+
+                  <td>
+                    <div class="actions">
+                      <a
+                        routerLink="/"
+                        class="btn btn-sm bg-success-light mr-1"
+                      >
+                        <i class="fas fa-pen"></i>
+                      </a>
+
+                      <a href="#" class="btn btn-sm bg-danger-light mr-1">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,425 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row">
+      <div class="col">
+        <h3 class="page-title">Schedule Add</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">Add Schedule</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <!-- Supported Elements -->
+      <div class="card">
+        <div class="card-body">
+          <form class="row">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label>Course Name</label>
+                <select class="select2 form-control" required>
+                  <option disabled selected>-- Select --</option>
+                  <option value="1">English</option>
+                  <option value="2">Chinease</option>
+                  <option value="3">Malay</option>
+                  <option value="4">Web Design</option>
+                </select>
+                <div class="invalid-feedback">Please select status</div>
+              </div>
+
+              <div class="custom-checkbox mb-3">
+                <label for="">Batch ID</label>
+                <div class="form-row">
+                  <div class="col-md-3">
+                    <div class="custom-control custom-radio">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="customControlValidation2"
+                        name="radio-stacked"
+                        required
+                      />
+                      <label
+                        class="custom-control-label"
+                        for="customControlValidation2"
+                        >Auto</label
+                      >
+                      <div class="invalid-feedback">Select the batch type</div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="custom-control custom-radio mb-3">
+                      <input
+                        type="radio"
+                        class="custom-control-input"
+                        id="customControlValidation3"
+                        name="radio-stacked"
+                        required
+                      />
+                      <label
+                        class="custom-control-label"
+                        for="customControlValidation3"
+                        >Manual</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="">Total Training Days</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder=""
+                  required
+                />
+                <div class="invalid-feedback">Please provide days</div>
+              </div>
+
+              <div class="form-group">
+                <label for="">Training Day 1</label>
+                <div class="row">
+                  <div class="col-md-4">
+                    <label for="">Start Time</label>
+                    <input
+                      type="time"
+                      class="form-control"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <label for="">End Time</label>
+                    <input
+                      type="time"
+                      class="form-control"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                  <div class="col-md-2">
+                    <p class="mt-4 pt-2 fw-bold">3.5 Hrs</p>
+                  </div>
+                  <div class="col-md-2">
+                    <a href="javascript:;" class="btn btn-primary mt-4"
+                      ><i class="fas fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="invalid-feedback">Please provide hours</div>
+              </div>
+            </div>
+
+            <!-- off column -->
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label>Course Language</label>
+                <select class="select2 form-control" required>
+                  <option disabled selected>-- Select Language --</option>
+                  <option value="1">English</option>
+                  <option value="2">Chinease</option>
+                  <option value="3">Malay</option>
+                  <option value="4">Singpore</option>
+                </select>
+                <div class="invalid-feedback">Please select status</div>
+              </div>
+
+              <div class="form-group">
+                <label for="">Total Training Hours</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder=""
+                  required
+                />
+                <div class="invalid-feedback">Please provide hours</div>
+              </div>
+              <div class="form-group">
+                <label for="">Course Start Date</label>
+                <input type="date" class="form-control" required />
+                <div class="invalid-feedback">Please enter date</div>
+              </div>
+              <div class="form-group">
+                <label for="">Course End Date</label>
+                <input type="date" class="form-control" required />
+                <div class="invalid-feedback">Please enter date</div>
+              </div>
+            </div>
+
+            <div class="col-lg-12">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="">Venue </label>
+                    <select class="custom-select" required>
+                      <option value="" disabled selected>
+                        --select Venue---
+                      </option>
+                      <option value="2">Venue 1</option>
+                      <option value="3">Venue 2</option>
+                    </select>
+                    <div class="invalid-feedback">Please select a Venue</div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">Class Room ID </label>
+                    <select class="custom-select" required>
+                      <option value="" disabled selected>
+                        --select Venue---
+                      </option>
+                      <option value="2">GFRER</option>
+                      <option value="3">FREDER</option>
+                    </select>
+                    <div class="invalid-feedback">Please select a Venue</div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">Delivery Type </label>
+                    <select class="custom-select" required>
+                      <option value="" disabled selected>
+                        --select Delivery---
+                      </option>
+                      <option value="2">Delivery 1</option>
+                      <option value="3">Delivery 2</option>
+                    </select>
+                    <div class="invalid-feedback">Please select a Venue</div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">Discounts code</label>
+                    <input type="text" class="form-control" required />
+                    <div class="invalid-feedback">
+                      Please enter discounts code
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-row">
+                    <div class="col-md-6">
+                      <label for="">Learner Min</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder=""
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Please provide Learner Min
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="">Learner Max</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder=""
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Please provide Learner Max
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="custom-checkbox mt-4 mb-4">
+                    <label for="">Course fees</label>
+                    <div class="form-row">
+                      <div class="col-md-3">
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="customControlValidation4"
+                            name="radio-stacked"
+                            required
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="customControlValidation4"
+                            >Auto</label
+                          >
+                          <div class="invalid-feedback">
+                            Select the Course fees
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="custom-control custom-radio mb-3">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            id="customControlValidation5"
+                            name="radio-stacked"
+                            required
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="customControlValidation5"
+                            >Manual</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Course Status </label>
+                    <select class="form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option value="1">Planned</option>
+                      <option value="2">Confirmed</option>
+                      <option value="2">Active</option>
+                    </select>
+                    <div class="invalid-feedback">Please select</div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <label for="">Trainer Name 1</label>
+                        <div class="form-group">
+                          <select class="form-control" required>
+                            <option disabled selected>-- Select --</option>
+                            <option value="1">Trainer1</option>
+                            <option value="2">Trainer2</option>
+                          </select>
+                          <div class="invalid-feedback">Please select</div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2">
+                        <a href="javascript:;" class="btn btn-primary mt-4"
+                          ><i class="fas fa-plus"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="invalid-feedback">Please provide hours</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label>Final Assessment Type</label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option value="1">Offline</option>
+                      <option value="2">Online</option>
+                    </select>
+                    <div class="invalid-feedback">Please select</div>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Assessor Type </label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option value="1">Trainers allowed</option>
+                      <option value="2">Trainers Lessonwise allowed</option>
+                      <option value="3">Trainers Not allowed</option>
+                      <option value="3">Assessor Auto</option>
+                    </select>
+                    <div class="invalid-feedback">Please select</div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">Email to notify</label>
+                    <select class="form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option value="1">Course Confirmation</option>
+                      <option value="2">Changes</option>
+                    </select>
+
+                    <div class="mt-2 clearfix">
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="exampleRadios"
+                          id="exampleRadios1"
+                          value="option1"
+                          checked
+                        />
+                        <label class="form-check-label" for="exampleRadios1">
+                          Auto
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="exampleRadios"
+                          id="exampleRadios2"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="exampleRadios2">
+                          Manual
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="">Final Assessment </label>
+                    <select class="custom-select" required>
+                      <option value="" disabled selected>--select---</option>
+                      <option value="2">Auto</option>
+                      <option value="3">Manual</option>
+                    </select>
+                    <div class="invalid-feedback">Please select</div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <label for="">Assessor Name 1</label>
+                        <div class="form-group">
+                          <select class="form-control" required>
+                            <option disabled selected>-- Select --</option>
+                            <option value="1">Assessor1</option>
+                            <option value="2">Assessor3</option>
+                          </select>
+                          <div class="invalid-feedback">Please select</div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-2">
+                        <a href="javascript:;" class="btn btn-primary mt-4"
+                          ><i class="fas fa-plus"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">Assessor (Auto) </label>
+                    <select class="form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option value="1">Yes</option>
+                      <option value="2">No</option>
+                    </select>
+                    <div class="invalid-feedback">Please select</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 mt-3">
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- /Supported Elements -->
+    </div>
+  </div>
+</div>

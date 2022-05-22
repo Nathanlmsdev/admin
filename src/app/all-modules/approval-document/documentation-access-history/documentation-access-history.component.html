@@ -1,0 +1,141 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row align-items-center">
+      <div class="col">
+        <h3 class="page-title">Documentation Access History</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">Documentation Access History</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card card-table">
+        <div class="card-body">
+          <!-- table -->
+          <div class="table-responsive smallinput">
+            <table
+              datatable
+              [dtOptions]="dtOptions"
+              class="datatable table table-stripped"
+            >
+              <thead class="bg bg-secondary">
+                <tr class="text-white">
+                  <th>
+                    <div class="form-group form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                    </div>
+                  </th>
+                  <th>SN</th>
+
+                  <th>Date</th>
+                  <th>Document ID</th>
+                  <th>Accessed by</th>
+                  <th>Assessed Time from -to</th>
+                  <th>Assessed Device</th>
+                  <th>Assessed IP address</th>
+                  <th>Confidentiality Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="form-group form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="exampleCheck1"
+                      />
+                    </div>
+                  </td>
+                  <td>1</td>
+
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="23-03-2022"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="DF123"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Grish"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="21.23.432"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Yes"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

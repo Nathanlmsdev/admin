@@ -1,0 +1,267 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row align-items-center">
+      <div class="col">
+        <h3 class="page-title">Employee - OJT</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">Employee - OJT</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card card-table">
+        <div class="card-body">
+          <div class="card mb-5">
+            <div class="card-body">
+              <form class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Employee ID</label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Employee Name </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Auto"
+                      disabled
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Designation </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Auto"
+                      disabled
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Department </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Auto"
+                      disabled
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>OJT Supervisor </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Auto"
+                      disabled
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>OJT Start Date </label>
+                    <input type="date" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>OJT End Date </label>
+                    <input type="date" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>OJT Tasks </label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Knowledge gained </label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Comptency evaluated </label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Evaluated Comments </label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group mt-3">
+                    <a routerLink="/" class="btn btn-primary"> Submit </a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- table -->
+          <div class="table-responsive smallinput">
+            <table
+              datatable
+              [dtOptions]="dtOptions"
+              class="datatable table table-stripped"
+            >
+              <thead class="bg bg-secondary">
+                <tr class="text-white">
+                  <th>SN</th>
+                  <th>Department</th>
+                  <th>OJT Supervisor</th>
+                  <th>OJT Date</th>
+                  <th>OJT Tasks</th>
+                  <th>Knowledge gained</th>
+                  <th>Comptency evaluated</th>
+                  <th>Evaluated Comments</th>
+                  <th>Evaluated By</th>
+                  <th>Evaluated Date</th>
+                  <th>Remarks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="form-group mt-4">
+            <a routerLink="/" class="btn btn-primary mr-3"> Submit </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,165 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row align-items-center">
+      <div class="col">
+        <h3 class="page-title">Employee - Internal Training Feedback</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">
+            Employee - Internal Training Feedback
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card card-table">
+        <div class="card-body">
+          <div class="card mb-0">
+            <div class="card-body">
+              <form class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Employee ID </label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group mt-4">
+                    <a routerLink="/" class="btn btn-primary"> Search </a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- table -->
+          <div class="table-responsive smallinput mt-4">
+            <table
+              datatable
+              [dtOptions]="dtOptions"
+              class="datatable table table-stripped"
+            >
+              <thead class="bg bg-secondary">
+                <tr class="text-white">
+                  <th>SN</th>
+                  <th>Training Topic</th>
+                  <th>Trainer Name</th>
+                  <th>Start Date</th>
+                  <th>End Date</th>
+                  <th>Total Hours</th>
+                  <th>Remarks by trainee</th>
+
+                  <th>Internal Training Feedback</th>
+                  <th>Feedback %</th>
+                  <th>Review Remarks</th>
+                  <th>Reviewed by</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </td>
+
+                  <td>
+                    <a href="#">Link</a>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input type="text" class="form-control" />
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="form-group mt-4">
+            <a routerLink="/" class="btn btn-primary mr-3"> Submit </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

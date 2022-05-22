@@ -1,0 +1,68 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row">
+      <div class="col">
+        <h3 class="page-title">Invoice List</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">Invoice List</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table
+              datatable
+              [dtOptions]="dtOptions"
+              class="datatable table table-stripped"
+            >
+              <thead class="bg bg-secondary">
+                <tr class="text-white">
+                  <th>S.No</th>
+                  <th>Action</th>
+                  <th>Taxable</th>
+                  <th>Discount</th>
+                  <th>Course code</th>
+                  <th>Batch Ref</th>
+                  <th>Student type</th>
+                  <th>Student Name</th>
+                  <th>Company Name</th>
+                  <th>Enrollment Ref</th>
+                  <th>Rate</th>
+                  <th>Currency</th>
+                  <th>Invoice Date</th>
+                  <th>Invoice to</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Generate</td>
+                  <td>GST</td>
+                  <td>10</td>
+                  <td>Php</td>
+                  <td>batch2</td>
+                  <td>Individual</td>
+                  <td>ICFC N1</td>
+                  <td>Tech System</td>
+                  <td>ENR32</td>
+                  <td>25</td>
+                  <td>SGD</td>
+                  <td>22-2-2020</td>
+                  <td>Corporate</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

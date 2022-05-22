@@ -1,0 +1,70 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row">
+      <div class="col">
+        <h3 class="page-title">Payment History</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">Payment History</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table
+              datatable
+              [dtOptions]="dtOptions"
+              class="datatable table table-stripped"
+            >
+              <thead class="bg bg-secondary">
+                <tr class="text-white">
+                  <th>S.No</th>
+                  <th>Action</th>
+                  <th>Review Status</th>
+                  <th>Receipt Date</th>
+                  <th>Receipt No</th>
+                  <th>Received Amount</th>
+                  <th>Invoiced Amount</th>
+                  <th>Invoice No</th>
+                  <th>Company Name</th>
+                  <th>Student Name</th>
+                  <th>Payment Type</th>
+                  <th>Payment Ref</th>
+                  <th>Credit Amount</th>
+                  <th>Processing Fee</th>
+                  <th>Merchant TXN Ref</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Amend</td>
+                  <td>Approve</td>
+                  <td>21-02-2022</td>
+                  <td>2434</td>
+                  <td>SGD 5645</td>
+                  <td>SG 123</td>
+                  <td>INV1313</td>
+                  <td>ABS System</td>
+                  <td>ICFC N1</td>
+                  <td>Cash</td>
+                  <td>UPI</td>
+                  <td>SG2525</td>
+                  <td>12%</td>
+                  <td>5%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

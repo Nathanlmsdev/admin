@@ -1,0 +1,1176 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row align-items-center">
+      <div class="col">
+        <h3 class="page-title">Employee Profile</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">Employee Profile</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card card-table">
+        <div class="card-body">
+          <form id="msform">
+            <div class="form-row">
+              <div class="col-md-12">
+                <fieldset>
+                  <h2 class="fs-title">General</h2>
+
+                  <div class="form-row">
+                    <div class="col-md-12">
+                      <div class="col-md-4">
+                        <div class="profile-image">
+                          <img
+                            id="blah"
+                            src="assets/img/user.jpg"
+                            alt=""
+                            height="200"
+                            class="border"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label class="mb-1"
+                            ><small>Profile Picture Change</small>
+                          </label>
+                          <input class="form-control" type="file" id="imgInp" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Employee Given name </label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Employee Surname </label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Employee ID </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          value="DR13"
+                          disabled
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Training Organization </label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>National Identification no </label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Upload NRIC/FIN </label>
+                        <input type="file" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Passport </label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Passport Expiry </label>
+                        <input type="date" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Citizenship </label>
+                        <select class="select2 form-control" required>
+                          <option disabled selected>-- Select --</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>DOB </label>
+                        <input type="date" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Gender </label>
+                        <select class="form-control" required>
+                          <option disabled selected>-- Select --</option>
+                          <option value="1">Male</option>
+                          <option value="2">Female</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Race </label>
+                        <select class="select2 form-control" required>
+                          <option disabled selected>-- Select --</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Religion </label>
+                        <select class="select2 form-control" required>
+                          <option disabled selected>-- Select --</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Languages Known </label>
+                        <select class="select2 form-control" multiple required>
+                          <option disabled>-- Select --</option>
+                          <option value="1">Tamil</option>
+                          <option value="2">Telugu</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Email </label>
+                        <input type="email" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Mobile Contact </label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Residential Address </label>
+                        <textarea rows="2" class="form-control"></textarea>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Pincode </label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Emergency contact person </label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Emergency contact number </label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Designation in ICFC </label>
+                        <select class="select2 form-control" required>
+                          <option disabled>-- Select --</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Appointment Status </label>
+                        <select class="select2 form-control" required>
+                          <option disabled>-- Select --</option>
+                          <option value="1">Full-time</option>
+                          <option value="2">Part-time</option>
+                          <option value="3">Permanent</option>
+                          <option value="4">Temporary</option>
+                          <option value="5">Adhoc</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Date of Join </label>
+                        <input type="date" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Currency </label>
+                        <select class="select2 form-control" required>
+                          <option disabled>-- Select --</option>
+                          <option value="1">USD</option>
+                          <option value="2">INR</option>
+                          <option value="2">SGD</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>CPF Eligibility </label>
+                        <select class="select2 form-control" required>
+                          <option disabled>-- Select --</option>
+                          <option value="1">Yes</option>
+                          <option value="2">No</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>CPF Computation </label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>DOJ </label>
+                        <input type="date" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Leave Allocated </label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Medical Leave Eligibility </label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Other Leave Eligibility </label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Medical Benefits </label>
+                        <select class="select2 form-control" required>
+                          <option disabled>-- Select --</option>
+                          <option value="1">Yes</option>
+                          <option value="2">No</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Other Benefits </label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Notice Period </label>
+                        <input type="month" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>DOR </label>
+                        <div class="form-row">
+                          <div class="col-md-6">
+                            <input type="date" class="form-control" />
+                          </div>
+                          <div class="col-md-6">
+                            <input type="file" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <label>Salary Fixed </label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-row">
+                        <div class="col-md-12">
+                          <label>Salary Variable </label>
+                        </div>
+                        <div class="col-md-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="200"
+                            disabled
+                          />
+                        </div>
+                        <div class="col-md-4">
+                          <input type="text" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                          <input type="file" class="form-control" multiple />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Notice Period </label>
+                        <select class="select2 form-control" required>
+                          <option disabled>-- Select --</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="2">3</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-row">
+                        <div class="col-md-12">
+                          <label>Date of Resignation</label>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input type="date" class="form-control" disabled />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <input type="file" class="form-control" multiple />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-row">
+                        <div class="col-md-12"><label>Hourly Rate </label></div>
+                        <div class="col-md-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="200"
+                            disabled
+                          />
+                        </div>
+                        <div class="col-md-4">
+                          <input type="text" class="form-control" />
+                        </div>
+                        <div class="col-md-4">
+                          <input type="file" class="form-control" multiple />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label>Appointment Letter</label>
+                      <div class="form-row">
+                        <div class="col-md-6">
+                          <input type="text" class="form-control" />
+                        </div>
+                        <div class="col-md-6">
+                          <input type="file" class="form-control" multiple />
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- end row -->
+                  </div>
+
+                  <button
+                    type="button"
+                    name="next"
+                    class="next btn btn-primary mt-4"
+                  >
+                    Save and Continue
+                  </button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+          <!-- step2 -->
+          <form id="msform" class="mt-3">
+            <fieldset>
+              <h2 class="fs-title">Academic Education Summary</h2>
+
+              <div class="form">
+                <div class="form-row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label class="mb-1"
+                        >HIGHEST QUALIFICATION Attained
+                      </label>
+                      <select class="form-control">
+                        <option
+                          value=""
+                          selected="selected"
+                          disabled="disabled"
+                        >
+                          -- select one --
+                        </option>
+                        <option value="No formal education">
+                          No formal education
+                        </option>
+                        <option value="Primary education">
+                          Primary education
+                        </option>
+                        <option value="Secondary education">
+                          Secondary education or high school
+                        </option>
+                        <option value="GED">GED</option>
+                        <option value="Vocational qualification">
+                          Vocational qualification
+                        </option>
+                        <option value="Bachelor's degree">
+                          Bachelor's degree
+                        </option>
+                        <option value="Master's degree">Master's degree</option>
+                        <option value="Doctorate or higher">
+                          Doctorate or higher
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label class="mb-1">MAIN SUBJECT </label>
+                      <input type="text" class="form-control" value="" />
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label class="mb-1">Country </label>
+                      <select class="form-control">
+                        <option selected disabled>Select Country</option>
+                        <option value="1">India</option>
+                        <option value="2">Singapore</option>
+                        <option value="3">Malaysia</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label class="mb-1">University </label>
+                      <input type="text" class="form-control" value="" />
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label class="mb-1">Completion year </label>
+                      <input type="text" class="form-control" value="" />
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label class="mb-1"
+                        ><small>UPLOAD CERTIFICATE OF COMPLETION</small>
+                      </label>
+                      <input class="form-control" type="file" />
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 col-md-12">
+                    <button type="submit" class="btn btn-secondary">
+                      <span class="label">Add Education</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- table -->
+              <div class="orders-table table-responsive mt-5">
+                <table class="table table-sm table-bordered">
+                  <thead>
+                    <tr>
+                      <th>S.no</th>
+                      <th>Qualification</th>
+                      <th>Subject</th>
+                      <th>Country</th>
+                      <th>University</th>
+                      <th>Completion Year</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>01</td>
+                      <td>Secondary education</td>
+                      <td>Bio Chemistry</td>
+                      <td>India</td>
+                      <td>MS University</td>
+                      <td>2008</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-secondary mr-2"
+                          ><i class="fa fa-edit"></i> Edit/View</a
+                        >
+                        <a href="#" class="btn btn-sm btn-secondary"
+                          ><i class="fa fa-trash"></i> Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>02</td>
+                      <td>Primary education</td>
+                      <td>Bio Chemistry</td>
+                      <td>India</td>
+                      <td>Madras University</td>
+                      <td>2004</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-secondary mr-2"
+                          ><i class="fa fa-edit"></i> Edit/View</a
+                        >
+                        <a href="#" class="btn btn-sm btn-secondary"
+                          ><i class="fa fa-trash"></i> Delete</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="d-block">
+                <button
+                  type="button"
+                  name="next"
+                  class="next btn btn-primary mt-4"
+                >
+                  Save and Continue
+                </button>
+              </div>
+            </fieldset>
+          </form>
+
+          <!-- step 3 -->
+          <form id="msform" class="mt-3">
+            <fieldset>
+              <h2 class="fs-title">Technical Education summary</h2>
+
+              <div class="form">
+                <div class="form-row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label class="mb-1"> Name of the Course </label>
+                      <input type="text" class="form-control" value="" />
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label class="mb-1"
+                        >Name of the Training Institute
+                      </label>
+                      <input type="text" class="form-control" value="" />
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label class="mb-1">Country </label>
+                      <select class="form-control">
+                        <option selected disabled>Select Country</option>
+                        <option value="1">India</option>
+                        <option value="2">Singapore</option>
+                        <option value="3">Malaysia</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label class="mb-1">Completion year </label>
+                      <input type="text" class="form-control" value="" />
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label class="mb-1"
+                        ><small>UPLOAD CERTIFICATE OF COMPLETION</small>
+                      </label>
+                      <input class="form-control" type="file" />
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12">
+                    <button type="submit" class="btn btn-secondary">
+                      <i class="bx bx-plus-circle icon-arrow before"></i>
+                      <span class="label">Add More Course</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- table -->
+              <div class="orders-table table-responsive mt-5">
+                <table class="table table-sm">
+                  <thead>
+                    <tr>
+                      <th>S.no</th>
+                      <th>Course</th>
+                      <th>Country</th>
+                      <th>Institute</th>
+                      <th>Completion Year</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>01</td>
+                      <td>UI/UX Design</td>
+                      <td>India</td>
+                      <td>Neon Media</td>
+                      <td>2010</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-secondary mr-2"
+                          ><i class="fa fa-edit"></i> Edit/View</a
+                        >
+                        <a href="#" class="btn btn-sm btn-secondary"
+                          ><i class="fa fa-trash"></i> Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>02</td>
+                      <td>Angular Development</td>
+                      <td>India</td>
+                      <td>Neon Media</td>
+                      <td>2010</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-secondary mr-2"
+                          ><i class="fa fa-edit"></i> Edit/View</a
+                        >
+                        <a href="#" class="btn btn-sm btn-secondary"
+                          ><i class="fa fa-trash"></i> Delete</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="d-block">
+                <button
+                  type="button"
+                  name="next"
+                  class="next btn btn-primary mt-4"
+                >
+                  Save and Continue
+                </button>
+              </div>
+            </fieldset>
+          </form>
+
+          <!-- step -->
+          <form id="msform" class="mt-3">
+            <fieldset>
+              <h2 class="fs-title">Experience summary</h2>
+
+              <div class="form-row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Company Name </label>
+                    <input type="text" class="form-control" placeholder="" />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Company Sector </label>
+                    <input type="text" class="form-control" value="" />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Designation </label>
+                    <input type="text" class="form-control" value="" />
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Responsibilities </label>
+                    <input type="text" class="form-control" value="" />
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Country </label>
+                    <select class="select2 form-control">
+                      <option selected disabled multiple>Select Country</option>
+                      <option value="1">India</option>
+                      <option value="2">Singapore</option>
+                      <option value="3">Malaysia</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Company Experience Letter </label>
+                    <input type="file" class="form-control" placeholder="" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-1">
+                <button type="submit" class="btn btn-secondary">
+                  <span class="label">Add Experience</span>
+                </button>
+              </div>
+
+              <!-- table -->
+              <div class="orders-table table-responsive mt-5">
+                <table class="table table-sm">
+                  <thead>
+                    <tr>
+                      <th>S.no</th>
+                      <th>Company Name</th>
+                      <th>Company Sector</th>
+                      <th>Designation</th>
+                      <th>Responsibilities</th>
+                      <th>Country</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>01</td>
+                      <td>Abc Systems</td>
+                      <td>Sect2</td>
+                      <td>Mangeer</td>
+                      <td>Respect</td>
+                      <td>Korea</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-secondary mr-2"
+                          ><i class="fa fa-edit"></i> Edit/View</a
+                        >
+                        <a href="#" class="btn btn-sm btn-secondary"
+                          ><i class="fa fa-trash"></i> Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>02</td>
+                      <td>Abc Systems</td>
+                      <td>Sect2</td>
+                      <td>Mangeer</td>
+                      <td>Respect</td>
+                      <td>UAE</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-secondary mr-2"
+                          ><i class="fa fa-edit"></i> Edit/View</a
+                        >
+                        <a href="#" class="btn btn-sm btn-secondary"
+                          ><i class="fa fa-trash"></i> Delete</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="d-block">
+                <button
+                  type="button"
+                  name="submit"
+                  class="next btn btn-primary mt-3"
+                >
+                  Save and Continue
+                </button>
+              </div>
+            </fieldset>
+          </form>
+
+          <!-- step -->
+          <form id="msform" class="mt-3">
+            <fieldset>
+              <h2 class="fs-title">MEMBERSHIP Summary</h2>
+
+              <div class="form-row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Membership Organization</label>
+                    <input type="text" class="form-control" placeholder="" />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Membership Type </label>
+                    <input type="text" class="form-control" value="" />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Membership From </label>
+                    <input type="date" class="form-control" value="" />
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Country </label>
+                    <select class="select2 form-control">
+                      <option selected disabled multiple>Select Country</option>
+                      <option value="1">India</option>
+                      <option value="2">Singapore</option>
+                      <option value="3">Malaysia</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Membership Certificate </label>
+                    <input type="file" class="form-control" placeholder="" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-1">
+                <button type="submit" class="btn btn-secondary">
+                  <span class="label">Add Membership </span>
+                </button>
+              </div>
+
+              <!-- table -->
+              <div class="orders-table table-responsive mt-5">
+                <table class="table table-sm">
+                  <thead>
+                    <tr>
+                      <th>S.no</th>
+                      <th>Membership Organization</th>
+                      <th>Membership Type</th>
+                      <th>Membership From</th>
+                      <th>Country</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>01</td>
+                      <td>Abc Systems</td>
+                      <td>Mem type</td>
+                      <td>from</td>
+                      <td>Korea</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-secondary mr-2"
+                          ><i class="fa fa-edit"></i> Edit/View</a
+                        >
+                        <a href="#" class="btn btn-sm btn-secondary"
+                          ><i class="fa fa-trash"></i> Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>02</td>
+                      <td>Abc Systems</td>
+                      <td>Mem type</td>
+                      <td>from</td>
+                      <td>Korea</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-secondary mr-2"
+                          ><i class="fa fa-edit"></i> Edit/View</a
+                        >
+                        <a href="#" class="btn btn-sm btn-secondary"
+                          ><i class="fa fa-trash"></i> Delete</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="d-block">
+                <button
+                  type="button"
+                  name="submit"
+                  class="next btn btn-primary mt-3"
+                >
+                  Save and Continue
+                </button>
+              </div>
+            </fieldset>
+          </form>
+
+          <!-- step -->
+          <form id="msform" class="mt-3">
+            <fieldset>
+              <h2 class="fs-title">Declaration Letter</h2>
+
+              <div class="form-row mt-3">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Confidentiality </label>
+                    <input type="file" class="form-control" placeholder="" />
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Code of Ethics </label>
+                    <input type="file" class="form-control" placeholder="" />
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>PDPA </label>
+                    <input type="file" class="form-control" placeholder="" />
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Integrity </label>
+                    <input type="file" class="form-control" placeholder="" />
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Health & Safety </label>
+                    <input type="file" class="form-control" placeholder="" />
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Others </label>
+                    <input type="file" class="form-control" placeholder="" />
+                  </div>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                  <button type="submit" class="btn btn-secondary">
+                    <i class="bx bx-plus-circle icon-arrow before"></i>
+                    <span class="label">Add Files</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- table -->
+              <div class="orders-table table-responsive mt-3">
+                <table class="table table-sm">
+                  <thead>
+                    <tr>
+                      <th>S.no</th>
+                      <th>Declaration</th>
+                      <th>Declaration Status</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>01</td>
+                      <td>Integrity: <small>File Name: Appoint.jpg</small></td>
+                      <td>Yes</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-secondary mr-2"
+                          ><i class="fa fa-edit"></i> Edit/View</a
+                        >
+                        <a href="#" class="btn btn-sm btn-secondary"
+                          ><i class="fa fa-trash"></i> Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>02</td>
+                      <td>PDPA: <small>File Name: Appoint.pdf</small></td>
+                      <td>No</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-secondary mr-2"
+                          ><i class="fa fa-edit"></i> Edit/View</a
+                        >
+                        <a href="#" class="btn btn-sm btn-secondary"
+                          ><i class="fa fa-trash"></i> Delete</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="d-block">
+                <button
+                  type="button"
+                  name="submit"
+                  class="next btn btn-primary mt-3"
+                >
+                  Save and Continue
+                </button>
+              </div>
+            </fieldset>
+          </form>
+
+          <!-- step -->
+          <form id="msform" class="mt-3">
+            <fieldset>
+              <h2 class="fs-title">Change Password</h2>
+
+              <div class="form-row mt-3">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Login ID </label>
+                    <input type="text" class="form-control" value="" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row mt-3">
+                <div class="col-md-3">
+                  <div class="">
+                    <label>Enter Registered Email </label>
+                  </div>
+                  <div class="input-group mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Email"
+                      aria-describedby="button-addon2"
+                    />
+                    <button
+                      class="btn btn-outline-secondary"
+                      type="button"
+                      id="button-addon2"
+                    >
+                      Enter
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="">
+                    <label>Verify OTP </label>
+                  </div>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="OTP"
+                      aria-describedby="button-addon2"
+                    />
+                    <button
+                      class="btn btn-outline-secondary"
+                      type="button"
+                      id="button-addon2"
+                    >
+                      Verify
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row mt-3">
+                <div class="col-md-3">
+                  <div class="">
+                    <label>Enter Registered Mobile </label>
+                  </div>
+                  <div class="input-group mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Mobile"
+                      aria-describedby="button-addon2"
+                    />
+                    <button
+                      class="btn btn-outline-secondary"
+                      type="button"
+                      id="button-addon2"
+                    >
+                      Enter
+                    </button>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="">
+                    <label>Verify OTP </label>
+                  </div>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="OTP"
+                      aria-describedby="button-addon2"
+                    />
+                    <button
+                      class="btn btn-outline-secondary"
+                      type="button"
+                      id="button-addon2"
+                    >
+                      Verify
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row mt-3">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Old password </label>
+                    <input type="text" class="form-control" value="" />
+                  </div>
+                  <div class="form-group">
+                    <label>New password </label>
+                    <input type="text" class="form-control" value="" />
+                  </div>
+                  <div class="form-group">
+                    <label>Confirm New password </label>
+                    <input type="text" class="form-control" value="" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-block">
+                <button
+                  type="button"
+                  name="submit"
+                  class="next btn btn-primary mt-4"
+                >
+                  Submit
+                </button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

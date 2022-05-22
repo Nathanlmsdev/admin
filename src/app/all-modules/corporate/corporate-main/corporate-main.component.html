@@ -1,0 +1,90 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row">
+      <div class="col">
+        <h3 class="page-title">All Corporate</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">Corporate List</li>
+        </ul>
+      </div>
+      <div class="col-auto text-right float-right ml-auto">
+        <a routerLink="/corporate/corporate-add" class="btn btn-primary"
+          ><i class="fas fa-plus"></i> Add Corporate</a
+        >
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table
+              datatable
+              [dtOptions]="dtOptions"
+              class="datatable table table-stripped"
+            >
+              <thead class="bg bg-secondary">
+                <tr class="text-white">
+                  <th>S.No</th>
+                  <th>CORP-Frequency</th>
+                  <th>CORP-ID</th>
+                  <th>Company Name</th>
+                  <th>CORP-Username</th>
+                  <th>Company Email</th>
+                  <th>Contact Number</th>
+                  <th>Contact Person</th>
+                  <th>Company Profile</th>
+                  <th>Students Completed</th>
+                  <th>Student Pending</th>
+                  <th>Queries Pending</th>
+                  <th>Remarks</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>
+                    <div class="alert alert-success p-1 small mb-0">
+                      Corp Fre
+                    </div>
+                    <div class="alert alert-danger p-1 small">Corp Fre</div>
+                  </td>
+                  <td>CORP23</td>
+                  <td>ABS Syst</td>
+                  <td>CORP-ICFC N1</td>
+                  <td>test@icfc.com.sg</td>
+                  <td>78901</td>
+                  <td>ICFC N1</td>
+                  <td><a href="">Profile</a></td>
+                  <td>52</td>
+                  <td>12</td>
+                  <td>Auto</td>
+                  <td>
+                    <input type="text" class="form-control form-control-sm" />
+                  </td>
+                  <td>
+                    <div class="actions">
+                      <a href="#" class="btn btn-sm bg-success-light mr-2">
+                        <i class="fas fa-pen"></i>
+                      </a>
+
+                      <a href="#" class="btn btn-sm bg-danger-light">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

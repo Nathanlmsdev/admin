@@ -1,0 +1,259 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row align-items-center">
+      <div class="col">
+        <h3 class="page-title">Assessment - Plan</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">Assessment - Plan</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card card-table">
+        <div class="card-body">
+          <div class="accordion" id="accordionExample">
+            <div class="card mb-0">
+              <div class="card-body">
+                <form class="row">
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label>Course Type</label>
+                      <select class="select2 form-control" required>
+                        <option disabled selected>-- Select --</option>
+                        <option value="1">Offline</option>
+                        <option value="2">Online</option>
+                        <option value="3">Others</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label>Course Name</label>
+                      <select class="select2 form-control" required>
+                        <option disabled selected>-- Select --</option>
+                        <option value="1">1</option>
+                        <option value="2">1</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label>Course ID</label>
+                      <select class="select2 form-control" required>
+                        <option disabled selected>-- Select --</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label>Batch ID</label>
+                      <select class="select2 form-control" required>
+                        <option disabled>-- Select --</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="2">3</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label>Assessment Type</label>
+                      <select class="select2 form-control" required>
+                        <option disabled selected>-- Select --</option>
+                        <option value="1">Written (open book)</option>
+                        <option value="2">Written (closed book)</option>
+                        <option value="3">Practical</option>
+                        <option value="4">Oral</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label>Assessment Code</label>
+                      <select class="select2 form-control" required>
+                        <option disabled selected>-- Select --</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="2">3</option>
+                      </select>
+                    </div>
+
+                    <div class="mt-2">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="form-group mt-4">
+                      <a routerLink="/" class="btn btn-primary"> Submit </a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- table -->
+          <div class="table-responsive smallinput mt-5">
+            <table
+              datatable
+              [dtOptions]="dtOptions"
+              class="datatable table table-stripped"
+            >
+              <thead class="bg bg-secondary">
+                <tr class="text-white">
+                  <th>
+                    <div class="form-group form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                    </div>
+                  </th>
+                  <th>SN</th>
+                  <th>Lesson Number</th>
+                  <th>Assessment Type</th>
+                  <th>Assessment Name</th>
+                  <th>Question No</th>
+                  <th>Allocated Marks</th>
+                  <th>Passing Mark</th>
+                  <th>No of Assessments (Req)</th>
+                  <th>No of Assessments (Completed)</th>
+                  <th>Total Marks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="form-group form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="exampleCheck1"
+                      />
+                    </div>
+                  </td>
+                  <td>1</td>
+
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="list"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Written test"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Essay"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="22"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="30 Mark"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="25 Mark"
+                        disabled
+                      />
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="2"
+                        disabled
+                      />
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="1"
+                        disabled
+                      />
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,120 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row">
+      <div class="col">
+        <h3 class="page-title">Schedule Management</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">Schedule Management</li>
+        </ul>
+      </div>
+      <div class="col-auto text-right float-right ml-auto">
+        <a href="#" class="btn btn-outline-primary mr-2"
+          ><i class="fas fa-download"></i>
+        </a>
+        <a routerLink="/course/schedule-add" class="btn btn-primary"
+          ><i class="fas fa-plus"></i> Add Schedule</a
+        >
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table
+              datatable
+              [dtOptions]="dtOptions"
+              class="datatable table table-stripped"
+            >
+              <thead class="bg bg-secondary">
+                <tr class="text-white">
+                  <th>Course Name</th>
+                  <th>Batch ID</th>
+                  <th>Course Language</th>
+                  <th>Training Days & Hrs</th>
+                  <th>Course Start Date</th>
+                  <th>Course End Date</th>
+                  <th>Venue</th>
+                  <th>Class Room ID</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Web</td>
+                  <td>DF12</td>
+                  <td>English</td>
+                  <td>5 Days, 12 Hrs</td>
+                  <td>19/12/2021</td>
+                  <td>28/1/2022</td>
+                  <td>Online</td>
+                  <td>GH345</td>
+                  <td>
+                    <div class="actions">
+                      <a href="#" class="btn btn-sm bg-success-light mr-2">
+                        <i class="fas fa-pen"></i>
+                      </a>
+
+                      <a href="#" class="btn btn-sm bg-danger-light">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>CSS</td>
+                  <td>DF33</td>
+                  <td>Malay</td>
+                  <td>5 Days, 12 Hrs</td>
+                  <td>22/12/2021</td>
+                  <td>05/1/2022</td>
+                  <td>Online</td>
+                  <td>GH335</td>
+                  <td>
+                    <div class="actions">
+                      <a href="#" class="btn btn-sm bg-success-light mr-2">
+                        <i class="fas fa-pen"></i>
+                      </a>
+
+                      <a href="#" class="btn btn-sm bg-danger-light">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>PHP</td>
+                  <td>CD12</td>
+                  <td>English</td>
+                  <td>2 Days, 12 Hrs</td>
+                  <td>19/12/2021</td>
+                  <td>28/1/2022</td>
+                  <td>Online</td>
+                  <td>GH345</td>
+                  <td>
+                    <div class="actions">
+                      <a href="#" class="btn btn-sm bg-success-light mr-2">
+                        <i class="fas fa-pen"></i>
+                      </a>
+
+                      <a href="#" class="btn btn-sm bg-danger-light">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

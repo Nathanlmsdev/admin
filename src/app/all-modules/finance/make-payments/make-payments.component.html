@@ -1,0 +1,312 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row align-items-center">
+      <div class="col">
+        <h3 class="page-title">Make Payments</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">Make Payments</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card card-table">
+        <div class="card-body">
+          <div class="card mb-0">
+            <div class="card-body">
+              <form class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Payment type </label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option id="Dropdown">Dropdown</option>
+                      <option id="Employee">Employee</option>
+                      <option id="Trainer">Trainer</option>
+                      <option id="Supplier">Supplier</option>
+                      <option id="Vendor">Vendor</option>
+                      <option id="Legal">Legal</option>
+                      <option id="Subscription">Subscription</option>
+                      <option id="Professionals">Professionals</option>
+                      <option id="Licence">Licence</option>
+                      <option id="Part-timer">Part-timer</option>
+                      <option id="Others">Others</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Payment to </label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="2">3</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Reccurring payment </label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option value="1">Yes</option>
+                      <option value="2">No</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Reccurring Frequency </label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option id="Daily">Daily</option>
+                      <option id="Weekly">Weekly</option>
+                      <option id="Monthly">Monthly</option>
+                      <option id="Quarterly">Quarterly</option>
+                      <option id="Specific Dates">Specific Dates</option>
+                      <option id="Others">Others</option>
+                      <option id="NA">NA</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Reccurring Type </label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option id="Salary">Salary</option>
+                      <option id="CPF">CPF</option>
+                      <option id="Bills">Bills</option>
+                      <option id="Professional Fees">Professional Fees</option>
+                      <option id="Service charges">Service charges</option>
+                      <option id="Others">Others</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Payment Mode </label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option value="1">Cheque</option>
+                      <option value="2">Online transfer</option>
+                      <option value="3">Others</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Payment Approval Status </label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option value="1">Approved</option>
+                      <option value="2">Not Approved</option>
+                      <option value="3">Seek Approval</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Payment Amount </label>
+                    <div class="form-row">
+                      <div class="col-md-6">
+                        <input type="text" class="form-control" />
+                      </div>
+                      <div class="col-md-6">
+                        <a href="/" class="btn btn-primary btn-sm">
+                          Calculate payment
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Payment Date </label>
+                    <input type="date" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Reason for Payment </label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Payment Reference </label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Payment supporting doc </label>
+                    <input type="file" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Remarks </label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group mt-4">
+                    <a routerLink="/" class="btn btn-primary"> Submit </a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- calculate -->
+          <div class="card mb-0 mt-4">
+            <div class="card-body">
+              <form class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Reference type </label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option id="Dropdown">Dropdown</option>
+                      <option id="Employee">Employee</option>
+                      <option id="Trainer">Trainer</option>
+                      <option id="Supplier">Supplier</option>
+                      <option id="Vendor">Vendor</option>
+                      <option id="Legal">Legal</option>
+                      <option id="Subscription">Subscription</option>
+                      <option id="Professionals">Professionals</option>
+                      <option id="Licence">Licence</option>
+                      <option id="Part-timer">Part-timer</option>
+                      <option id="Others">Others</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Reference ID </label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="2">3</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Reccurring Frequency </label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option id="Daily">Daily</option>
+                      <option id="Weekly">Weekly</option>
+                      <option id="Monthly">Monthly</option>
+                      <option id="Quarterly">Quarterly</option>
+                      <option id="Specific Dates">Specific Dates</option>
+                      <option id="Others">Others</option>
+                      <option id="NA">NA</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Reccurring Type </label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option id="Salary">Salary</option>
+                      <option id="CPF">CPF</option>
+                      <option id="Bills">Bills</option>
+                      <option id="Professional Fees">Professional Fees</option>
+                      <option id="Service charges">Service charges</option>
+                      <option id="Others">Others</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Amount Due </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Auto"
+                      disabled
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Amend Amt </label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <div class="form-row">
+                      <div class="col-md-6">
+                        <label>Justification </label>
+                        <input type="text" class="form-control" />
+                      </div>
+                      <div class="col-md-6">
+                        <label>Upload evidence </label>
+                        <input type="file" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label> Remarks for Approval </label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Send Approval </label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option id="Managers">Managers</option>
+                      <option id="Supervisors">Supervisors</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group mt-4">
+                    <a routerLink="/" class="btn btn-primary"> Submit </a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

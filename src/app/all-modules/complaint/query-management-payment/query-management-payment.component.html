@@ -1,0 +1,209 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row align-items-center">
+      <div class="col">
+        <h3 class="page-title">Query Management - Payment</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">Query Management - Payment</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card card-table">
+        <div class="card-body">
+          <div class="card mb-0">
+            <div class="card-body">
+              <form class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Query Date </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      disabled
+                      placeholder="21-02-2022"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Query Number </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      disabled
+                      placeholder="23434"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Details of Query </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      disabled
+                      placeholder="Auto"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label> Nature Of Query</label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option value="1">Funding/Grant</option>
+                      <option value="2">Invoice</option>
+                      <option value="3">Refund</option>
+                      <option value="3">Payment Receipt</option>
+                      <option value="3">Discount</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Query By</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      disabled
+                      placeholder="Auto"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Query Rating </label>
+                    <select class="select2 form-control" required>
+                      <option disabled>-- Select --</option>
+                      <option value="1">Very High</option>
+                      <option value="2">High</option>
+                      <option value="3">Medium</option>
+                      <option value="4">Low</option>
+                      <option value="5">Negligible</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Query Assigned To</label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option value="1">Manager</option>
+                      <option value="2">Supervisor</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Query response Due on </label>
+                    <input type="date" class="form-control" placeholder="" />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Query Response </label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Further Query Details (Ques) </label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      disabled
+                      placeholder="Auto"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Further Query Replies (Ans) </label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Final Query Details (Ques) </label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      disabled
+                      placeholder="Auto"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Final Query Replies (Ans) </label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Post response </label>
+                    <input class="form-control" type="text" />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Query Status </label>
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option value="1">Open</option>
+                      <option value="2">Closed</option>
+                      <option value="2">Progressing</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Query Closure Date </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      disabled
+                      placeholder="Auto"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Remarks </label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group mt-4">
+                    <a routerLink="/" class="btn btn-primary"> Submit </a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

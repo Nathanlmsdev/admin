@@ -1,0 +1,431 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row align-items-center">
+      <div class="col">
+        <h3 class="page-title">Invoice - manual mode (Send & Edit)</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">
+            Invoice - manual mode (Send & Edit)
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card card-table">
+        <div class="card-body">
+          <div class="card mb-0">
+            <div class="card-body">
+              <form class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Date </label>
+                    <input type="date" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label> Currency </label>
+                    <select class="select2 form-control" required>
+                      <option disabled>-- Select --</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="2">3</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label> Company Name </label>
+                    <select class="select2 form-control" required>
+                      <option disabled>-- Select --</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="2">3</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Grant Type </label>
+                    <select class="select2 form-control" required>
+                      <option disabled>-- Select --</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="2">3</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label> Course Code </label>
+                    <select class="select2 form-control" required>
+                      <option disabled>-- Select --</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="2">3</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Batch ID </label>
+                    <select class="select2 form-control" required>
+                      <option disabled>-- Select --</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="2">3</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Training Organisation </label>
+                    <select class="select2 form-control" required>
+                      <option disabled>-- Select --</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="2">3</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group mt-4">
+                    <a routerLink="/" class="btn btn-primary"> Submit </a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- table -->
+          <div class="table-responsive smallinput mt-5">
+            <table
+              datatable
+              [dtOptions]="dtOptions"
+              class="datatable table table-stripped"
+            >
+              <thead class="bg bg-secondary">
+                <tr class="text-white">
+                  <th>SN</th>
+                  <th>Invoice Number</th>
+                  <th>Taxable</th>
+                  <th>Student Name</th>
+                  <th>National ID</th>
+                  <th>Enrollment Ref</th>
+                  <th>Student type</th>
+                  <th>Course Description</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <select class="form-control" required>
+                        <option disabled>-- Select --</option>
+                        <option value="1">Non-GST</option>
+                        <option value="2">GST</option>
+                      </select>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="auto"
+                        disabled
+                      />
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Course Name, Course Code, Batch ID, Course Duration"
+                        disabled
+                      />
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="actions">
+                      <a routerLink="/" class="btn btn-sm btn-primary mr-1">
+                        <i class="fas fa-edit"></i>
+                      </a>
+
+                      <a routerLink="/" class="btn btn-sm btn-primary mr-1">
+                        <i class="fas fa-eye"></i>
+                      </a>
+                      <a routerLink="/" class="btn btn-sm btn-secondary mr-1">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- submited -->
+
+          <div class="card mt-5">
+            <div class="card-body">
+              <form class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Billable Amount </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="auto"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Discount </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="auto"
+                      disabled
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Billed Amount </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="auto"
+                      disabled
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Grant Type </label>
+                    <select class="select2 form-control" required>
+                      <option disabled>-- Select --</option>
+                      <option value="1">SSG</option>
+                      <option value="2">SDF</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Grant Amount </label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Quantity </label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Total Amount </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="auto"
+                      disabled
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Total Discount </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="auto"
+                      disabled
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label> Subtotal </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="auto"
+                      disabled
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label> GST (9.00 %) </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="auto"
+                      disabled
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label> Less From SDF Grant </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="auto"
+                      disabled
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label> Less from SSG Grant </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="auto"
+                      disabled
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label> Total Net fees Payable </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="auto"
+                      disabled
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label> Invoice Sending Mode </label>
+                    <select class="select2 form-control" required>
+                      <option disabled>-- Select --</option>
+                      <option value="1">Email</option>
+                      <option value="2">Hardcopy</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label> Email ID </label>
+                    <div class="form-row">
+                      <div class="col-md-10">
+                        <input type="text" class="form-control" />
+                      </div>
+                      <div class="col-md-2">
+                        <a routerLink="/" class="btn btn-primary">
+                          <i class="fas fa-plus"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label> Invoice to </label>
+                    <select class="select2 form-control" required>
+                      <option disabled>-- Select --</option>
+                      <option value="1">Individual</option>
+                      <option value="2">Coporate</option>
+                      <option value="2">Sponsored</option>
+                      <option value="2">Training Organisation</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group mt-4">
+                    <a href="/" class="btn btn-secondary mr-2"> Preview </a>
+                    <a href="/" class="btn btn-primary mr-2"> Save as draft </a>
+                    <a href="/" class="btn btn-success mr-2"> Edit </a>
+                    <a href="/" class="btn btn-primary"> Submit </a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

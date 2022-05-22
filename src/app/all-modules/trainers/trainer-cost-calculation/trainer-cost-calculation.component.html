@@ -1,0 +1,171 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row align-items-center">
+      <div class="col">
+        <h3 class="page-title">Trainer Cost Calculation</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">Trainer Cost Calculation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card card-table">
+        <div class="card-body">
+          <div class="accordion" id="accordionExample">
+            <div class="card mb-0">
+              <div
+                class="card-header p-2"
+                id="headingOne"
+                style="background-color: #f5f5f5"
+              >
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link btn-block text-left"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  ></button>
+                </h2>
+              </div>
+
+              <div
+                id="collapseOne"
+                class="collapse show"
+                aria-labelledby="headingOne"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <form class="row">
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Trainer ID </label>
+                        <select class="select2 form-control" required>
+                          <option disabled selected>-- Select --</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="2">3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Trainer Name </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          value="ICFC N1"
+                          disabled
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Course Name </label>
+                        <select class="select2 form-control" required>
+                          <option disabled>-- Select --</option>
+                          <option value="1">Php</option>
+                          <option value="2">C#</option>
+                          <option value="2">Java</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Course ID</label>
+                        <select class="select2 form-control" required>
+                          <option disabled selected>-- Select --</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="2">3</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Batch ID</label>
+                        <select class="select2 form-control" required>
+                          <option disabled selected>-- Select --</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="2">3</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Month</label>
+                        <input type="month" class="form-control" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group mt-4">
+                        <a routerLink="/" class="btn btn-primary"> Update </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- table -->
+          <div class="table-responsive mt-5">
+            <table
+              datatable
+              [dtOptions]="dtOptions"
+              class="datatable table table-stripped"
+            >
+              <thead class="bg bg-secondary">
+                <tr class="text-white">
+                  <th>SN</th>
+                  <th>Trainer ID</th>
+                  <th>Course ID</th>
+                  <th>Trainee Count</th>
+                  <th>Date</th>
+                  <th>Start Time</th>
+
+                  <th>End Time</th>
+                  <th>Total Hours</th>
+                  <th>Hourly Rate</th>
+                  <th>Day Cost</th>
+                  <th>Referral Cost</th>
+                  <th>Total Cost</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>DR344</td>
+                  <td>TRAI235</td>
+                  <td>23 Jan 2022</td>
+                  <td>COUR235</td>
+                  <td>22-Jan-2022</td>
+                  <td>42</td>
+
+                  <td>9.30 AM</td>
+                  <td>10.30 AM</td>
+                  <td>1 Hrs</td>
+                  <td>800</td>
+                  <td>1000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

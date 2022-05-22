@@ -1,0 +1,150 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row">
+      <div class="col">
+        <h3 class="page-title">All Courses</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">Courses List</li>
+        </ul>
+      </div>
+      <div class="col-auto text-right float-right ml-auto">
+        <a href="#" class="btn btn-outline-primary mr-2"
+          ><i class="fas fa-download"></i>
+        </a>
+        <a routerLink="/students/students-add" class="btn btn-primary"
+          ><i class="fas fa-plus"></i> Add Course</a
+        >
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table
+              datatable
+              [dtOptions]="dtOptions"
+              class="datatable table table-stripped"
+            >
+              <thead class="bg bg-secondary">
+                <tr class="text-white">
+                  <th>S.No</th>
+                  <th>Status</th>
+                  <th>Deliver.Type</th>
+                  <th>Training Organization</th>
+                  <th>Course Name</th>
+                  <th>Approvals</th>
+                  <th>Course Code</th>
+                  <th>Course Language</th>
+                  <th>TotHrs</th>
+                  <th>Course Fees</th>
+                  <th>Course Type</th>
+                  <th>Assessment</th>
+                  <th>Approved Trainers</th>
+                  <th>CreatedBy</th>
+                  <th>CreatedDate</th>
+                  <th>Last updated</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Ongoing</td>
+                  <td>Synchronus</td>
+                  <td>CSC Computers</td>
+                  <td>Web Development</td>
+                  <td>Admin</td>
+                  <td>D123</td>
+                  <td>English</td>
+                  <td>12 Hrs</td>
+                  <td>3500</td>
+                  <td>WSQ Singapore</td>
+                  <td>Written</td>
+                  <td>ICFC N1</td>
+                  <td>Ayappan</td>
+                  <td>09/12/2021</td>
+                  <td>28/12/2021</td>
+                  <td>
+                    <div class="actions">
+                      <a href="#" class="btn btn-sm bg-success-light mr-2">
+                        <i class="fas fa-pen"></i>
+                      </a>
+
+                      <a href="#" class="btn btn-sm bg-danger-light">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Under Review</td>
+                  <td>Online</td>
+                  <td>CSC Computers</td>
+                  <td>Web Development</td>
+                  <td>Admin</td>
+                  <td>D123</td>
+                  <td>English</td>
+                  <td>12 Hrs</td>
+                  <td>3500</td>
+                  <td>WSQ Singapore</td>
+                  <td>Oral</td>
+                  <td>ICFC N1</td>
+                  <td>Ayappan</td>
+                  <td>3/10/2021</td>
+                  <td>15/11/2021</td>
+                  <td>
+                    <div class="actions">
+                      <a href="#" class="btn btn-sm bg-success-light mr-2">
+                        <i class="fas fa-pen"></i>
+                      </a>
+
+                      <a href="#" class="btn btn-sm bg-danger-light">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Closed</td>
+                  <td>Blended</td>
+                  <td>CSC Computers</td>
+                  <td>Web Development</td>
+                  <td>Admin</td>
+                  <td>D123</td>
+                  <td>English</td>
+                  <td>12 Hrs</td>
+                  <td>3500</td>
+                  <td>NonWSQ Singapore</td>
+                  <td>Practical</td>
+                  <td>ICFC N1</td>
+                  <td>Ayappan</td>
+                  <td>13/12/2021</td>
+                  <td>21/12/2021</td>
+                  <td>
+                    <div class="actions">
+                      <a href="#" class="btn btn-sm bg-success-light mr-2">
+                        <i class="fas fa-pen"></i>
+                      </a>
+
+                      <a href="#" class="btn btn-sm bg-danger-light">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

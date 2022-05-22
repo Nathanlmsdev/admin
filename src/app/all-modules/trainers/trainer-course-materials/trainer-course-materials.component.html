@@ -1,0 +1,250 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row align-items-center">
+      <div class="col">
+        <h3 class="page-title">Trainer Course Materials Index</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">Trainer Course Materials Index</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card card-table">
+        <div class="card-body">
+          <div class="accordion" id="accordionExample">
+            <div class="card mb-0">
+              <div
+                class="card-header p-2"
+                id="headingOne"
+                style="background-color: #f5f5f5"
+              >
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link btn-block text-left"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  ></button>
+                </h2>
+              </div>
+
+              <div
+                id="collapseOne"
+                class="collapse show"
+                aria-labelledby="headingOne"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <form class="row">
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Course Name </label>
+                        <select class="select2 form-control" required>
+                          <option disabled>-- Select --</option>
+                          <option value="1">Php</option>
+                          <option value="2">C#</option>
+                          <option value="2">Java</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Course ID </label>
+                        <select class="select2 form-control" required>
+                          <option disabled selected>-- Select --</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="2">3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Course Content</label>
+                        <select class="select2 form-control" required>
+                          <option disabled selected>-- Select --</option>
+                          <option value="1">Lesson</option>
+                          <option value="2">Assessment</option>
+                          <option value="2">Others</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group mt-4">
+                        <a routerLink="/" class="btn btn-primary"> Update </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- table -->
+          <div class="table-responsive mt-5">
+            <table
+              datatable
+              [dtOptions]="dtOptions"
+              class="datatable table table-stripped"
+            >
+              <thead class="bg bg-secondary">
+                <tr class="text-white">
+                  <th>SN</th>
+                  <th>Lesson Name</th>
+                  <th>Lesson ID</th>
+                  <th>Section Name</th>
+                  <th>Section ID</th>
+                  <th>View Link</th>
+                  <th>Review Result</th>
+                  <th>Remarks</th>
+                  <th>Review Date</th>
+                  <th>Last Reviewed by</th>
+                  <th>Review History</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Angular Redux</td>
+                  <td>COUR123</td>
+                  <td>Angular</td>
+                  <td>Ang123</td>
+                  <td><a href="#">Link</a></td>
+                  <td>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="inlineCheckbox1"
+                        value="option1"
+                      />
+                      <label class="form-check-label" for="inlineCheckbox1"
+                        >Approved</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="inlineCheckbox2"
+                        value="option2"
+                      />
+                      <label class="form-check-label" for="inlineCheckbox2"
+                        >Not Approved</label
+                      >
+                    </div>
+                    <br />
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="inlineCheckbox3"
+                        value="option3"
+                      />
+                      <label class="form-check-label" for="inlineCheckbox3"
+                        >Amendment Proposed</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="inlineCheckbox4"
+                        value="option4"
+                      />
+                      <label class="form-check-label" for="inlineCheckbox4"
+                        >Changes Needed</label
+                      >
+                    </div>
+                    <br />
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="inlineCheckbox4"
+                        value="option4"
+                      />
+                      <label class="form-check-label" for="inlineCheckbox4"
+                        >Others</label
+                      >
+                    </div>
+                  </td>
+                  <td><a href="#">Click View Details</a></td>
+                  <td>12 Jan 2022</td>
+                  <td>John</td>
+                  <td><a href="#">Click here History</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="mt-4">
+            <form>
+              <div class="row">
+                <div class="col-md-2">
+                  <div class="form-group">
+                    <label>OVERALL Suggestion</label>
+                    <div class="clearfix">
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="inlineCheckbox11"
+                          value="option11"
+                        />
+                        <label class="form-check-label" for="inlineCheckbox11"
+                          >Approved</label
+                        >
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="inlineCheckbox12"
+                          value="option12"
+                        />
+                        <label class="form-check-label" for="inlineCheckbox12"
+                          >Not Approved</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>OVERALL Remarks</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group mt-4">
+                    <a href="#" class="btn btn-primary"> Submit Review</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

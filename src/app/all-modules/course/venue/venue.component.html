@@ -1,0 +1,83 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row">
+      <div class="col">
+        <h3 class="page-title">Venue Management</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">Venue Management</li>
+        </ul>
+      </div>
+      <div class="col-auto text-right float-right ml-auto">
+        <a href="#" class="btn btn-outline-primary mr-2"
+          ><i class="fas fa-download"></i>
+        </a>
+        <a routerLink="/course/venue-add" class="btn btn-primary"
+          ><i class="fas fa-plus"></i> Add Venue</a
+        >
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table
+              datatable
+              [dtOptions]="dtOptions"
+              class="datatable table table-stripped"
+            >
+              <thead class="bg bg-secondary">
+                <tr class="text-white">
+                  <th>S.No</th>
+                  <th>Centre Status</th>
+                  <th>CentreName</th>
+                  <th>Class Room ID</th>
+                  <th>Approvals</th>
+                  <th>Class Room Status</th>
+                  <th>Profile</th>
+                  <th>CreatedBy</th>
+                  <th>CreatedDate</th>
+                  <th>UpdatedBy</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>owned</td>
+                  <td>Hall 25462</td>
+                  <td>F456</td>
+                  <td>M-Approval: Yes <br />U-Approval: Yes</td>
+                  <td>Occupied</td>
+                  <td><a href="#">ProImage</a></td>
+                  <td>Shanmuga</td>
+                  <td>28/12/2021</td>
+                  <td>Shankar</td>
+                  <td>
+                    <div class="actions">
+                      <a
+                        routerLink="/course/venue-add"
+                        class="btn btn-sm bg-success-light mr-2"
+                      >
+                        <i class="fas fa-pen"></i>
+                      </a>
+
+                      <a href="#" class="btn btn-sm bg-danger-light">
+                        <i class="fas fa-trash"></i>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

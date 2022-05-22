@@ -1,0 +1,1265 @@
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-inner slimscroll">
+    <perfect-scrollbar [scrollIndicators]="false">
+      <div id="sidebar-menu" class="sidebar-menu">
+        <ul>
+          <li class="menu-title">
+            <span>Main Menu</span>
+          </li>
+
+          <li [ngClass]="[activeRoute === 'dashboard' ? 'active' : '']">
+            <a routerLink="/dashboard/dashboard-main" (click)="setActive()"
+              ><i class="fas fa-th-large"></i> <span>Dashboard</span></a
+            >
+          </li>
+
+          <!-- staff management -->
+          <li [ngClass]="[activeRoute === 'staff' ? 'active' : 'submenu']">
+            <a
+              [ngClass]="[activeRoute === 'staff' ? 'active' : '']"
+              (click)="setActive()"
+              ><i class="fas fa-chalkboard-teacher"></i>
+              <span> Staff Management</span> <span class="menu-arrow"></span
+            ></a>
+            <ul>
+              <li>
+                <a
+                  [ngClass]="[active2Route === 'employee-list' ? 'active' : '']"
+                  (click)="setActive()"
+                  routerLink="/staff/employee-list"
+                  >Employee List</a
+                >
+              </li>
+
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'employee-profile' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/staff/employee-profile"
+                  >Employee Profile</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'employee-approved-roles' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/staff/employee-approved-roles"
+                  >Employee - Approved Roles</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'employee-attendance' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/staff/employee-attendance"
+                  >Employee - Attendance</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'employee-leave-management' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/staff/employee-leave-management"
+                  >Employee - Leave Management</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'employee-annual-appraisal' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/staff/employee-annual-appraisal"
+                  >Employee - Annual Appraisal</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'employee-proposed-competency-matrix'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/staff/employee-proposed-competency-matrix"
+                  >Employee - Proposed Competency Matrix</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'employee-competency-matrix-review'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/staff/employee-competency-matrix-review"
+                  >Employee - Competency Matrix Review</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'employee-training-plan' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/staff/employee-training-plan"
+                  >Employee - Training Plan</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[active2Route === 'employee-ojt' ? 'active' : '']"
+                  (click)="setActive()"
+                  routerLink="/staff/employee-ojt"
+                  >Employee - OJT
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'employee-training-attendance'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/staff/employee-training-attendance"
+                  >Employee - Training Attendance</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'employee-internal-training-feedback'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/staff/employee-internal-training-feedback"
+                  >Employee - Internal Training Feedback</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'hr-candidate-application-review'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/staff/hr-candidate-application-review"
+                  >HR Candidate - Application Review</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'hr-candidate-interview' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/staff/hr-candidate-interview"
+                  >HR Candidate - Interview</a
+                >
+              </li>
+              <!-- <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'employee-annual-appraisal' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/staff/employee-annual-appraisal"
+                  >Employee</a
+                >
+              </li> -->
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'employee-exit-interview' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/staff/employee-exit-interview"
+                  >Employee - Exit Interview</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'training-organisation-profile'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/staff/training-organisation-profile"
+                  >Training Organisation - Profile</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <!-- Course Management -->
+          <li [ngClass]="[activeRoute === 'course' ? 'active' : 'submenu']">
+            <a
+              [ngClass]="[activeRoute === 'course' ? 'active' : '']"
+              (click)="setActive()"
+              ><i class="fas fa-book-reader"></i>
+              <span> Course Management</span> <span class="menu-arrow"></span
+            ></a>
+            <ul>
+              <li>
+                <a
+                  [ngClass]="[active2Route === 'venue-list' ? 'active' : '']"
+                  (click)="setActive()"
+                  routerLink="/course/venue-list"
+                  >Venue Management</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[active2Route === 'venue-add' ? 'active' : '']"
+                  (click)="setActive()"
+                  routerLink="/course/venue-add"
+                  >Venue Add</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[active2Route === 'schedule-list' ? 'active' : '']"
+                  (click)="setActive()"
+                  routerLink="/course/schedule-list"
+                  >Schedule Management</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[active2Route === 'schedule-add' ? 'active' : '']"
+                  (click)="setActive()"
+                  routerLink="/course/schedule-add"
+                  >Schedule Add</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[active2Route === 'course-list' ? 'active' : '']"
+                  (click)="setActive()"
+                  routerLink="/course/course-list"
+                  >Courses All</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[active2Route === 'course-add' ? 'active' : '']"
+                  (click)="setActive()"
+                  routerLink="/course/course-add"
+                  >Course Add</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[active2Route === 'lesson-list' ? 'active' : '']"
+                  (click)="setActive()"
+                  routerLink="/course/lesson-list"
+                  >Lesson List</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[active2Route === 'lesson-add' ? 'active' : '']"
+                  (click)="setActive()"
+                  routerLink="/course/lesson-add"
+                  >Lesson Add</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'assessment-list' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/course/assessment-list"
+                  >Assessment List</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'assessment-add' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/course/assessment-add"
+                  >Assessment Add</a
+                >
+              </li>
+              <!-- icfc -->
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'course-proposal-list' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/course/course-proposal-list"
+                  >ICFC Course Proposal List
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'course-proposal-add' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/course/course-proposal-add"
+                  >ICFC Course Proposal Add
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'course-requirement-list' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/course/course-requirement-list"
+                  >Course Requirement List
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'course-requirement-add' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/course/course-requirement-add"
+                  >Course Requirement Add
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Student Management-->
+          <li [ngClass]="[activeRoute === 'students' ? 'active' : 'submenu']">
+            <a
+              [ngClass]="[activeRoute === 'students' ? 'active' : '']"
+              (click)="setActive()"
+              ><i class="fas fa-user-graduate"></i> <span> Students</span>
+              <span class="menu-arrow"></span
+            ></a>
+            <ul>
+              <li>
+                <a
+                  [ngClass]="[active2Route === 'students-list' ? 'active' : '']"
+                  (click)="setActive()"
+                  routerLink="/students/students-list"
+                  >Student List</a
+                >
+              </li>
+
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'course-confirmation' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/students/course-confirmation"
+                  >Student Course Confirmation</a
+                >
+              </li>
+
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'manual-student-registration'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/students/manual-student-registration"
+                  >Manual Student Registration</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'student-profile-status-search'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/students/student-profile-status-search"
+                  >Student Profile Status Search</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'pre-course-administration' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/students/pre-course-administration"
+                  >Pre-Course Administration
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'in-course-administration' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/students/in-course-administration"
+                  >Live Course Administration
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'post-course-administration'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/students/post-course-administration"
+                  >Post-Course Administration
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- Trainers Management-->
+          <li [ngClass]="[activeRoute === 'trainers' ? 'active' : 'submenu']">
+            <a
+              [ngClass]="[activeRoute === 'trainers' ? 'active' : '']"
+              (click)="setActive()"
+              ><i class="fas fa-users"></i> <span> Trainers</span>
+              <span class="menu-arrow"></span
+            ></a>
+            <ul>
+              <li>
+                <a
+                  [ngClass]="[active2Route === 'trainers-list' ? 'active' : '']"
+                  (click)="setActive()"
+                  routerLink="/trainers/trainers-list"
+                  >Trainers List</a
+                >
+              </li>
+
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'trainers-profile' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/trainers/trainers-profile"
+                  >Trainers Profile
+                </a>
+              </li>
+
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'trainers-approvals' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/trainers/trainers-approvals"
+                  >Trainers New Approvals
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'trainers-approvals-list' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/trainers/trainers-approvals-list"
+                  >Trainers Approvals List
+                </a>
+              </li>
+
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'trainers-attendance-management'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/trainers/trainers-attendance-management"
+                  >Trainer Attendance Management
+                </a>
+              </li>
+
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'trainers-course-materials-index'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/trainers/trainers-course-materials-index"
+                  >Trainer Course Materials Index
+                </a>
+              </li>
+
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'trainers-coursewise-feedback'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/trainers/trainers-coursewise-feedback"
+                  >Trainer Coursewise Feedback
+                </a>
+              </li>
+
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'trainers-cost-calculation' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/trainers/trainers-cost-calculation"
+                  >Trainer Cost Calculation
+                </a>
+              </li>
+
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'trainers-appraisal' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/trainers/trainers-appraisal"
+                  >Trainer Appraisal
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'trainers-exit-interview' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/trainers/trainers-exit-interview"
+                  >Trainer Exit Interview
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!--  Attandence Management-->
+          <li
+            [ngClass]="[
+              activeRoute === 'courseattendance' ? 'active' : 'submenu'
+            ]"
+          >
+            <a
+              [ngClass]="[activeRoute === 'courseattendance' ? 'active' : '']"
+              (click)="setActive()"
+              ><i class="fas fa-book-open"></i>
+              <span> Attendance </span>
+              <span class="menu-arrow"></span
+            ></a>
+            <ul>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'attendance-course-start' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/courseattendance/attendance-course-start"
+                  >Attendance Start</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'attendance-course-during' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/courseattendance/attendance-course-during"
+                  >Attendance During</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'attendance-course-end' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/courseattendance/attendance-course-end"
+                  >Attendance During Assessment</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'attendance-course-forecast'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/courseattendance/attendance-course-forecast"
+                  >Attendance Forecast</a
+                >
+              </li>
+
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'course-attendance-list' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/courseattendance/course-attendance-list"
+                  >Course Attendance List</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li [ngClass]="[activeRoute === 'corporate' ? 'active' : 'submenu']">
+            <a
+              [ngClass]="[activeRoute === 'corporate' ? 'active' : '']"
+              (click)="setActive()"
+              ><i class="fas fa-building"></i>
+              <span> Corporate </span>
+              <span class="menu-arrow"></span
+            ></a>
+            <ul>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'corporate-list' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/corporate/corporate-list"
+                  >Corporate List</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[active2Route === 'corporate-add' ? 'active' : '']"
+                  (click)="setActive()"
+                  routerLink="/corporate/corporate-add"
+                  >Corporate Add</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <!-- assessment -->
+          <li [ngClass]="[activeRoute === 'assessment' ? 'active' : 'submenu']">
+            <a
+              [ngClass]="[activeRoute === 'assessment' ? 'active' : '']"
+              (click)="setActive()"
+              ><i class="fas fa-clipboard-list"></i>
+              <span> Assessment </span>
+              <span class="menu-arrow"></span
+            ></a>
+            <ul>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'assessment-plan' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/assessment/assessment-plan"
+                >
+                  Plan</a
+                >
+              </li>
+
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'assessment-entries' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/assessment/assessment-entries"
+                >
+                  Entries</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'assessment-answer-paper-correction'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/assessment/assessment-answer-paper-correction"
+                  >Answer Paper Correction</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'assessment-results-individual'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/assessment/assessment-results-individual"
+                >
+                  Results Individual</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'assessment-results-overall'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/assessment/assessment-results-overall"
+                >
+                  Results Overall</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'assessment-upload-question-sheet'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/assessment/assessment-upload-question-sheet"
+                >
+                  Upload Question Sheet</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'assessment-upload-answer-sheet'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/assessment/assessment-upload-answer-sheet"
+                >
+                  Upload Answer Sheet</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'assessment-upload-question-bank'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/assessment/assessment-upload-question-bank"
+                >
+                  Upload Question Bank</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'assessment-review' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/assessment/assessment-review"
+                >
+                  Review</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'assessment-upload-batch-assessments'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/assessment/assessment-upload-batch-assessments"
+                >
+                  Upload Batch Assessments</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <!-- Finance -->
+          <li [ngClass]="[activeRoute === 'finance' ? 'active' : 'submenu']">
+            <a
+              [ngClass]="[activeRoute === 'finance' ? 'active' : '']"
+              (click)="setActive()"
+              ><i class="fas fa-coins"></i>
+              <span> Finance </span>
+              <span class="menu-arrow"></span
+            ></a>
+            <ul>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'invoice-manual-mode' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/finance/invoice-manual-mode"
+                  >Invoice - Manual Mode
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'making-payments-received' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/finance/making-payments-received"
+                  >Making Payments Received (Manual)
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'review-payments-received' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/finance/review-payments-received"
+                  >Review Payments Received
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'invoice-history' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/finance/invoice-history"
+                  >Invoice History
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'payment-received-history' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/finance/payment-received-history"
+                  >Payment Received History
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'grant-submission-history' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/finance/grant-submission-history"
+                  >Grant Submission History
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'grant-submission' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/finance/grant-submission"
+                  >Grant Submission
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[active2Route === 'make-payments' ? 'active' : '']"
+                  (click)="setActive()"
+                  routerLink="/finance/make-payments"
+                  >Make Payments
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'payments-made-list' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/finance/payments-made-list"
+                  >Payments Made List
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'payment-receipt' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/finance/payment-receipt"
+                  >Payment Receipt
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[active2Route === 'salary-slip' ? 'active' : '']"
+                  (click)="setActive()"
+                  routerLink="/finance/salary-slip"
+                  >Salary Slip
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'supplier-vendor-management'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/finance/supplier-vendor-management"
+                  >Supplier Vendor Management
+                </a>
+              </li>
+
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'approved-supplier-vendor-list'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/finance/approved-supplier-vendor-list"
+                  >Approved Supplier Vendor List
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- Approval Document -->
+          <li
+            [ngClass]="[
+              activeRoute === 'approval-document' ? 'active' : 'submenu'
+            ]"
+          >
+            <a
+              [ngClass]="[activeRoute === 'approval-document' ? 'active' : '']"
+              (click)="setActive()"
+              ><i class="fas fa-file-invoice"></i>
+              <span> Approval Document </span>
+              <span class="menu-arrow"></span
+            ></a>
+            <ul>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'documentation-management' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/approval-document/documentation-management"
+                  >Documentation Management</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'documentation-list' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/approval-document/documentation-list"
+                  >Documentation List</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'documentation-access-history'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/approval-document/documentation-access-history"
+                  >Documentation Access History</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'compliance-documentation-list'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/approval-document/compliance-documentation-list"
+                  >Compliance Documentation List</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <!-- certificate -->
+          <li
+            [ngClass]="[activeRoute === 'certificate' ? 'active' : 'submenu']"
+          >
+            <a
+              [ngClass]="[activeRoute === 'certificate' ? 'active' : '']"
+              (click)="setActive()"
+              ><i class="fas fa-certificate"></i>
+              <span> Certificate </span>
+              <span class="menu-arrow"></span
+            ></a>
+            <ul>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'certificate-template' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/certificate/certificate-template"
+                  >Certificate Template
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[active2Route === 'card-template' ? 'active' : '']"
+                  (click)="setActive()"
+                  routerLink="/certificate/card-template"
+                  >Card Template
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'certificate-generation-manual'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/certificate/certificate-generation-manual"
+                  >Certificate Generation (Manual)
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'certificate-generation-auto'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/certificate/certificate-generation-auto"
+                  >Certificate Generation (Auto)
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'card-generation-manual' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/certificate/card-generation-manual"
+                  >Card Generation (Manual)
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'card-generation-auto' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/certificate/card-generation-auto"
+                  >Card Generation (Auto)
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'certificate-list' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/certificate/certificate-list"
+                  >Certificate List</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[active2Route === 'card-list' ? 'active' : '']"
+                  (click)="setActive()"
+                  routerLink="/certificate/card-list"
+                  >Card List
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'certificate-summary' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/certificate/certificate-summary"
+                  >Certificate Summary
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- discount -->
+          <li [ngClass]="[activeRoute === 'discount' ? 'active' : 'submenu']">
+            <a
+              [ngClass]="[activeRoute === 'discount' ? 'active' : '']"
+              (click)="setActive()"
+              ><i class="fas fa-ticket-alt"></i>
+              <span> Discount </span>
+              <span class="menu-arrow"></span
+            ></a>
+            <ul>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'discount-generate-code' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/discount/discount-generate-code"
+                  >Discount - Generate Code</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'discount-validator' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/discount/discount-validator"
+                  >Discount - Validator</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <!-- complaints -->
+          <li [ngClass]="[activeRoute === 'complaint' ? 'active' : 'submenu']">
+            <a
+              [ngClass]="[activeRoute === 'complaint' ? 'active' : '']"
+              (click)="setActive()"
+              ><i class="fas fa-comment-alt"></i>
+              <span> Complaints </span>
+              <span class="menu-arrow"></span
+            ></a>
+            <ul>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'complaint-management-response'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/complaint/complaint-management-response"
+                  >Complaint Management - Response</a
+                >
+              </li>
+
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'complaint-management-followup-actions'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/complaint/complaint-management-followup-actions"
+                  >Complaint Management - Followup Actions</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'complaint-list' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/complaint/complaint-list"
+                  >Complaint List</a
+                >
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'appeal-management' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/complaint/appeal-management"
+                  >Appeal Management
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[active2Route === 'appeals-list' ? 'active' : '']"
+                  (click)="setActive()"
+                  routerLink="/complaint/appeals-list"
+                  >Appeals List
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'query-management-course-application'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/complaint/query-management-course-application"
+                  >Query Management - Course Application
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'query-management-technical'
+                      ? 'active'
+                      : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/complaint/query-management-technical"
+                  >Query Management - Technical
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'query-management-training' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/complaint/query-management-training"
+                  >Query Management - Training
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'query-management-payment' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/complaint/query-management-payment"
+                  >Query Management - Payment
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[
+                    active2Route === 'query-management-others' ? 'active' : ''
+                  ]"
+                  (click)="setActive()"
+                  routerLink="/complaint/query-management-others"
+                  >Query Management - Others
+                </a>
+              </li>
+              <li>
+                <a
+                  [ngClass]="[active2Route === 'query-list' ? 'active' : '']"
+                  (click)="setActive()"
+                  routerLink="/complaint/query-list"
+                  >Query List
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </perfect-scrollbar>
+  </div>
+</div>
+<!-- /Sidebar -->

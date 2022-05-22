@@ -1,0 +1,301 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row">
+      <div class="col">
+        <h3 class="page-title">Lesson Add</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">Add Lesson</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <!-- lesson form row -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-body">
+          <form class="row">
+            <div class="col-md-6">
+              <div class="form-row">
+                <div class="col-md-12">
+                  <label>Course Code</label>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option value="1">D2342</option>
+                      <option value="2">D2343</option>
+                      <option value="2">D2344</option>
+                      <option value="2">Manual</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder=""
+                    disabled
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-md-12">
+                  <label>Lesson List</label>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option value="1">D2342</option>
+                      <option value="2">D2343</option>
+                      <option value="2">D2344</option>
+                      <option value="2">Manual</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="search lesson"
+                  />
+                </div>
+              </div>
+
+              <!-- end col -->
+            </div>
+            <!-- end col6 -->
+            <div class="col-md-6">
+              <div class="form-row">
+                <div class="col-md-12">
+                  <label>Course Name</label>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <select class="select2 form-control" required>
+                      <option disabled selected>-- Select --</option>
+                      <option value="1">Web Design</option>
+                      <option value="2">Php Programme</option>
+                      <option value="2">Manual</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder=""
+                    disabled
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-body">
+                  <h6 class="text-danger">Lesson 1</h6>
+                  <!-- row start -->
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="">Lesson Code</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder=""
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="">Lesson Description </label>
+                        <textarea
+                          class="form-control"
+                          id=""
+                          rows="2"
+                        ></textarea>
+                      </div>
+
+                      <!-- end col-6 -->
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="">Lesson Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder=""
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="">Number of Sections</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder=""
+                          required
+                        />
+                      </div>
+
+                      <!-- end col 6 -->
+                    </div>
+                  </div>
+
+                  <!-- row start -->
+                  <div class="form-row mt-4">
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="">Section Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder=""
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-md-2">
+                      <div class="form-group">
+                        <label for="">Section Number</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder=""
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="">Section Description </label>
+                        <textarea
+                          class="form-control"
+                          id=""
+                          rows="3"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label for="lessonImageUpload">Upload Section </label>
+                        <input
+                          type="text"
+                          class="form-control mb-2"
+                          placeholder="File Name"
+                          required
+                        />
+                        <input
+                          type="file"
+                          class="form-control-file form-control"
+                          id="lessonImageUpload"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios"
+                            id="exampleRadios1"
+                            value="option1"
+                            checked
+                          />
+                          <label class="form-check-label" for="exampleRadios1">
+                            Content
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios"
+                            id="exampleRadios2"
+                            value="option2"
+                          />
+                          <label class="form-check-label" for="exampleRadios2">
+                            Video
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios"
+                            id="exampleRadios3"
+                            value="option3"
+                          />
+                          <label class="form-check-label" for="exampleRadios3">
+                            Audio
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios"
+                            id="exampleRadios4"
+                            value="option4"
+                          />
+                          <label class="form-check-label" for="exampleRadios4">
+                            Html Content
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="exampleRadios"
+                            id="exampleRadios5"
+                            value="option4"
+                          />
+                          <label class="form-check-label" for="exampleRadios5">
+                            Zip Files
+                          </label>
+                        </div>
+                      </div>
+
+                      <a href="#" class="btn btn-sm bg-info text-white">
+                        <i class="fas fa-download"></i> Download
+                      </a>
+                    </div>
+                    <div class="col-md-1 text-center">
+                      <div class="actions mt-4">
+                        <a href="#" class="btn btn-sm bg-danger-light">
+                          <i class="fas fa-trash"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <a href="#" class="btn btn-secondary"
+                        ><i class="fas fa-plus"></i> Add Lesson</a
+                      >
+                    </div>
+                  </div>
+                  <!-- end row -->
+                </div>
+              </div>
+              <!-- end col6 -->
+            </div>
+            <!-- col-12 -->
+            <div class="col-lg-12 mt-3">
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+            <!-- end row -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end row -->
+</div>

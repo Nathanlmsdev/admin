@@ -1,0 +1,283 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row align-items-center">
+      <div class="col">
+        <h3 class="page-title">Student Course Confirmation</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">Course Confirmation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <!-- input -->
+    <div class="col-sm-12">
+      <div class="card card-table">
+        <div class="card-body">
+          <form class="row">
+            <div class="col-md-6">
+              <label class="">&nbsp;</label>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Text input with dropdown button"
+                />
+                <div class="input-group-append">
+                  <button
+                    class="btn btn-outline-secondary dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Select
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Student Name</a>
+                    <a class="dropdown-item" href="#">Email </a>
+                    <a class="dropdown-item" href="#">NRIC/FIN </a>
+                    <a class="dropdown-item" href="#">Course Name </a>
+                    <a class="dropdown-item" href="#">Mobile Number </a>
+                    <a class="dropdown-item" href="#">Corporate Name</a>
+                    <a class="dropdown-item" href="#">Batch No </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="form-group mt-4">
+                    <a
+                      routerLink="/course/course-requirement-add"
+                      class="btn btn-primary"
+                      ><i class="fas fa-search"></i> Search
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- end search -->
+    <div class="col-sm-12">
+      <div class="card card-table">
+        <div class="card-body">
+          <div class="accordion" id="accordionExample">
+            <div class="card mb-0">
+              <div
+                class="card-header p-2"
+                id="headingOne"
+                style="background-color: #f5f5f5"
+              >
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link btn-block text-left"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    #1
+                  </button>
+                </h2>
+              </div>
+
+              <div
+                id="collapseOne"
+                class="collapse show"
+                aria-labelledby="headingOne"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  <form class="row">
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Teaching Mode</label>
+                        <select class="select2 form-control" required>
+                          <option disabled selected>-- Select --</option>
+                          <option value="1">Synchronus Online</option>
+                          <option value="2">Blended Online</option>
+                          <option value="2">Offline</option>
+                          <option value="2">Classroom</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Traininng Organization</label>
+                        <select class="select2 form-control" required>
+                          <option disabled selected>-- Select --</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Course Name</label>
+                        <select class="select2 form-control" required>
+                          <option disabled selected>-- Select --</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Course Code</label>
+                        <select class="select2 form-control" required>
+                          <option disabled selected>-- Select --</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Batch ID </label>
+                        <select class="select2 form-control" required>
+                          <option disabled selected>-- Select --</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Month </label>
+                        <input
+                          type="month"
+                          class="form-control"
+                          placeholder=""
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Date </label>
+                        <input
+                          type="date"
+                          class="form-control"
+                          placeholder=""
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Class Size </label>
+                        <input
+                          type="number"
+                          class="form-control"
+                          placeholder=""
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Slots Available </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder=""
+                          disabled
+                          value="23 and 24"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Students Name </label>
+                        <select class="select2 form-control" required>
+                          <option disabled>-- Select --</option>
+                          <option value="1">ICFC N1</option>
+                          <option value="2">Iyappan</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Payment Status </label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder=""
+                          disabled
+                          value="2345"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Course Confirmation Action </label>
+                        <select class="select2 form-control" required>
+                          <option disabled selected>-- Select --</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="2">3</option>
+                        </select>
+                        <input
+                          type="text"
+                          class="form-control mt-2"
+                          placeholder=""
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label>Course Confirmation Status </label>
+                        <div class="alert alert-success pt-2 pb-2">
+                          confirmed
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-5">
+                      <div class="form-group">
+                        <label>Email Status </label>
+                        <div class="form-row">
+                          <div class="col-md-12">
+                            <input
+                              type="text"
+                              class="form-control bg-success"
+                              placeholder="lakvas@gmamil.com"
+                              disabled
+                            />
+                          </div>
+                        </div>
+
+                        <div class="form-row">
+                          <div class="col-md-8">
+                            <input
+                              type="text"
+                              class="form-control mt-1"
+                              placeholder=""
+                            />
+                          </div>
+                          <div class="col-md-4">
+                            <a routerLink="/" class="btn btn-primary mt-1">
+                              Update & Send
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,99 @@
+<div class="content container-fluid">
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="row align-items-center">
+      <div class="col">
+        <h3 class="page-title">Trainer Appraisal</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">Trainer Appraisal</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Page Header -->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card card-table">
+        <div class="card-body">
+          <div class="mb-0">
+            <form class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Trainer ID </label>
+                  <select class="select2 form-control" required>
+                    <option disabled selected>-- Select --</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="2">3</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Trainer Name </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    disabled
+                    value="ICFC N1"
+                  />
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Appraisal Rating </label>
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Remarks </label>
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Next Appraisal Date </label>
+                  <input type="date" class="form-control" />
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Appraisee </label>
+                  <select class="select2 form-control" required>
+                    <option disabled selected>-- Select --</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="2">3</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label class="d-block">Appraisal Interview Form </label>
+                  <button type="button" class="btn btn-secondary mb-2">
+                    Appraisal Interview Form
+                  </button>
+                  <input type="file" class="form-control" />
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="form-group mt-4">
+                  <a routerLink="/" class="btn btn-primary"> Update </a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
